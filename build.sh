@@ -13,6 +13,7 @@ packages=(
   git-lfs
   go
   golangci-lint-bin
+  helm
   make
   nodejs-lts-hydrogen
   npm
