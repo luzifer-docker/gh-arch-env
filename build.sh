@@ -9,6 +9,7 @@ packages=(
   awk
   curl
   diffutils
+  docker
   git
   git-lfs
   go
