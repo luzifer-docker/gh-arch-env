@@ -16,7 +16,7 @@ packages=(
   golangci-lint-bin
   helm
   make
-  nodejs-lts-hydrogen
+  nodejs-lts-jod
   npm
   tar
   trivy
