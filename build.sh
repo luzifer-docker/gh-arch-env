@@ -10,6 +10,7 @@ packages=(
   curl
   diffutils
   docker
+  docker-buildx
   git
   git-lfs
   go
