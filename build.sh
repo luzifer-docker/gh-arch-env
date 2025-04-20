@@ -19,6 +19,7 @@ packages=(
   make
   nodejs-lts-jod
   npm
+  pacman-contrib
   tar
   trivy
   unzip
