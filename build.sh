@@ -16,10 +16,13 @@ packages=(
   go
   golangci-lint-bin
   helm
+  less
   make
   nodejs-lts-jod
   npm
   pacman-contrib
+  rsync
+  sudo
   tar
   trivy
   unzip
@@ -60,3 +63,6 @@ EOF
 
 step "Installling desired packages"
 pacman -Syy --noconfirm "${packages[@]}"
+
+step "Creating unprivileged user"
+useradd -m builder

@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+function step() {
+  echo "[$(date +%H:%M:%S)] $@..." >&2
+}
+
+tmpdir=$(mktemp -d)
+trap "rm -rf ${tmpdir}" EXIT
+
+step "Copying files into tmp-workdir"
+rsync -a ./ ${tmpdir}/
+
+step "Entering tmp-workdir"
+pushd ${tmpdir}
+
+step "Updating PKGBUILD checksums as builder user"
+sudo -u builder updpkgsums
+
+step "Moving back to initial dir"
+popd
+
+step "Grabbing updated PKGBUILD"
+cp -a ${tmpdir}/PKGBUILD PKGBUILD
