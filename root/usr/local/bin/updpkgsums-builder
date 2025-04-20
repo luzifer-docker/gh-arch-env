@@ -10,6 +10,7 @@ trap "rm -rf ${tmpdir}" EXIT
 
 step "Copying files into tmp-workdir"
 rsync -a ./ ${tmpdir}/
+chown -R builder ${tmpdir}
 
 step "Entering tmp-workdir"
 pushd ${tmpdir}
