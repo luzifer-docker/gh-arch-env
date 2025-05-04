@@ -15,6 +15,7 @@ packages=(
   git-lfs
   go
   golangci-lint-bin
+  go-yq
   helm
   less
   make
