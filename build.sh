@@ -27,6 +27,7 @@ packages=(
   tar
   trivy
   unzip
+  vault
   which
   zip
 )
