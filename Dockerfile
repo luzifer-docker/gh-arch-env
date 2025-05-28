@@ -1,4 +1,4 @@
-FROM luzifer/archlinux@sha256:3b145400145052c4f2e5c565d08ed38fd83b6fefa190d2db60c5415c58f4fa83
+FROM luzifer/archlinux@sha256:eedfaa1b96d89b9f37e74ccb7af45875e4fec91fd35158c330b95e0a11cb8811
 
 COPY build.sh /usr/local/bin/init-image
 RUN bash /usr/local/bin/init-image
