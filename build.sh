@@ -12,6 +12,7 @@ packages=(
   docker
   docker-buildx
   git
+  git-crypt
   git-lfs
   go
   golangci-lint-bin
