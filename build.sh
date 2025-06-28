@@ -6,6 +6,7 @@ function step() {
 }
 
 packages=(
+  ansible-core
   awk
   curl
   diffutils
