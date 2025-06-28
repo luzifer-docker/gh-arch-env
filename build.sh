@@ -23,6 +23,7 @@ packages=(
   make
   nodejs-lts-jod
   npm
+  openssh
   pacman-contrib
   rsync
   sudo
